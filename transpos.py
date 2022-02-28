@@ -28,7 +28,7 @@ def encryptTxt(key, text):
     return ciphertxt
 
 def decryptTxt(key, cipher):
-    colNum = int(math.ceil(len(cipher)/ float(key)))
+    colNum = int(math.ceil(len(cipher)/float(key)))
     rowNum = key
     shBoxes = (colNum*rowNum) - len(cipher)
     decrypted = ['']*colNum
