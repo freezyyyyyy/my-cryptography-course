@@ -9,9 +9,13 @@ def main():
         encrypted = encryptTxt(pkey, message)
         encryptstr = ''.join(encrypted)
         decrypted = decryptTxt(pkey, encryptstr)
+
+        # printing mapped ciphertext into some rows with the amount equal to key and show the entire ciphertext
         for i in encrypted:
             print('|'+i+'|')
         print('|'+encryptstr+'|')
+
+        # showing the result of decryption progress
         print(decrypted)
         print("\n")
         j += 1
